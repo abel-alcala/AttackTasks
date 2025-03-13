@@ -25,9 +25,9 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          npm install --workspaces=false
+          npm run -w react-frontend build --if-present
+          npm run -w react-frontend test --if-present
         working-directory: packages/react-frontend
 
       - name: Zip artifact for deployment
@@ -72,5 +72,5 @@ jobs:
         with:
           app-name: 'TickTockTask'
           slot-name: 'Production'
-          package: packages/react-frontend
+          package: .
           
