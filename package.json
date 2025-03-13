@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint . && npx prettier --check .",
-    "dev": "concurrently \"cd Packages/react-frontend && npm run dev\" \"cd Packages/express-backend && npx nodemon backend.js\"",
+    "dev": "concurrently \"cd packages/react-frontend && npm run dev\" \"cd packages/express-backend && npx nodemon backend.js\"",
     "start": "npm run dev"
   },
   "workspaces": [
