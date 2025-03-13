@@ -1,0 +1,311 @@
+/* GooglePopup.css */
+.google-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.google-popup-container {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Include all styles from the original styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner_container {
+  margin: 1.5rem;
+  height: 33.25rem;
+  width: 28rem;
+  border: 0.1em solid #d9dadb;
+  background-color: white;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inner_logo {
+  margin: 20px;
+  margin-bottom: 0;
+  height: auto;
+  width: 95px;
+}
+
+#sign {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #1f1f1f;
+}
+
+#use {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #1f1f1f;
+}
+
+
+.email_input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+Form.emailForm {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.email_input input[type="text"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  color: #1f1f1f;
+}
+
+.showPassword {
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #5f6368;
+}
+
+.email_input input[type="password"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  color: #1f1f1f;
+}
+
+label.show {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #5f6368;
+}
+
+.email_input label,
+input[type="checkbox"] {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 7px;
+  align-self: start;
+}
+
+.email_input input[type="checkbox"] {
+  transform: scale(1.5);
+  padding: 5px;
+}
+
+
+.email_input button {
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  align-self: start;
+}
+
+.learnmore {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 13px;
+  color: #5f6368;
+}
+
+.learnmore a {
+  text-decoration: none;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.buttonS {
+  margin-top: 2rem;
+  height: 500px;
+  width: 448px;
+  display: flex;
+  justify-content: space-around;
+  font-size : 15px;
+}
+
+#Create {
+  text-align: center;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#next {
+  padding: 10px 25px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a73e8;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.inner_footer {
+  margin: 5px;
+  height: 35px;
+  width: 448px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner_footer a {
+  padding: 0.9em;
+  font-size: small;
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.inner_footer div select {
+  margin-left: 0;
+  padding: 0px 20px;
+  border: none;
+  color: #5f6368;
+}
+
+
+#Welcome {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #1f1f1f;
+}
+
+#email {
+  border: 2px solid #e0e4e9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px 10px;
+  color: #1f1f1f;
+}
+
+.inner_head {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.google-container {
+  margin-bottom: 10px;
+}
+
+.errorOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  pointer-events: auto;
+}
+
+.errorMessage {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.errorMessage h3 {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.errorMessage p {
+  color: #333;
+}
+
+.errorMessage a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.errorMessage a:hover {
+  background-color: darkred;
+}

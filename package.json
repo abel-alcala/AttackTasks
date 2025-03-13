@@ -1,0 +1,33 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint . && npx prettier --check .",
+    "dev": "concurrently \"cd Packages/react-frontend && npm run dev\" \"cd Packages/express-backend && npx nodemon backend.js\"",
+    "start": "npm run dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "concurrency": "^0.1.4",
+    "concurrently": "^9.0.1",
+    "mongoose": "^8.7.3",
+    "react-calendar": "^5.1.0"
+  }
+}

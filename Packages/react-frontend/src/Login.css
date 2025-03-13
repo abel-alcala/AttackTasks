@@ -1,0 +1,500 @@
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-btn {
+    width: 40%;
+    padding: .6rem;
+    font-size: 1em;
+    background: none;
+    border: none;
+    color: hsl(200, 100%, 90%);
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: .1rem;
+}
+
+.forgot-btn {
+    width: 50%;
+    padding: .6rem;
+    font-size: 1em;
+    background: none;
+    border: none;
+    color: hsl(200, 100%, 90%);
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: .1rem;
+
+}
+
+.login-forms input[type="text"], .login-forms input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: 1px solid hsl(200, 100%, 50%);
+    background: hsl(200, 50%, 50%, 0.2);
+    color: white;
+    border-radius: 0.25em;
+    outline: none;
+}
+
+.login-forms input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1em;
+    background: hsl(200, 100%, 50%, 0.2);
+    border: none;
+    color: hsl(200, 100%, 90%);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0;
+}
+
+.link-btn {
+    background: hsl(235, 55%, 49%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+#root {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin : 0 auto
+}
+
+.main-container,
+.large-calendar {
+    transition: transform 0.4s ease-in-out;
+}
+
+.main-container.sidebar-open,
+.large-calendar.sidebar-open {
+    transform: translateX(225px);
+}
+
+
+/* font and box */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main body*/
+body {
+    background: rgb(25, 25, 25);
+    color: hsl(200, 100%, 90%);
+    padding: 5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: hsl(231, 21%, 18%);
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.main-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    transition: margin-left 0.4s ease-in-out;
+    position: relative;
+    flex-grow: 1;
+}
+
+.clock{
+    display: flex;
+    gap: 0.5rem;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1rem;
+    word-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+}
+
+/* Header*/
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: #0f0f0f;
+}
+
+/* Adjust space between clock and sign-out button */
+.header-right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.list-header {
+    background: hsl(231, 21%, 18%);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: .5rem;
+}
+
+.list-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .75rem;
+}
+
+/* List title styling */
+.text-center {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: hsl(200, 100%, 90%);
+}
+
+/* Delete List button */
+.delete-list-btn {
+    background-color: hsl(0, 70%, 50%);
+    border: none;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-list-btn:hover {
+    background-color: hsl(0, 80%, 40%);
+}
+
+
+
+/* New item form*/
+.new-item-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.25rem;
+}
+
+.new-item-form input {
+    outline: none;
+    border: 1px solid hsl(200, 100%, 50%);
+    background: hsl(200, 50%, 50%, 0.2);
+    border-radius: 0.25em;
+    padding: 0.5rem;
+    color: hsl(200, 100%, 90%);
+    flex-grow: 1;
+}
+
+.new-item-form input::placeholder {
+    color: hsl(200, 100%, 90%);
+}
+
+
+/* Input focus state */
+.new-item-form input:focus {
+    border: 1px solid hsl(200, 100%, 70%);
+}
+
+/* Button*/
+.btn {
+    background: hsl(200, 100%, 50%, 0.2);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(200, 100%, 90%);
+    padding: 0.45em 0.5em;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: hsl(220, 100%, 40%, 0.4);
+}
+
+/* No list text popup */
+.no-list-prompt {
+    font-size: 2rem;
+    color: hsl(200, 100%, 80%);
+    margin-top: 0;
+}
+
+/*Task list*/
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/*Checkbox for list items*/
+.list li input[type="checkbox"] {
+    appearance: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Task list item */
+.list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid hsl(200, 100%, 30%);
+}
+
+/* Label for task checkbox */
+.list li label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.list li label::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3px;
+    border: 1px solid hsl(200, 100%, 50%);
+    display: inline-block;
+}
+
+/* Completed task*/
+.list li.completed label::before {
+    content: "✔";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(200, 100%, 40%);
+    color: hsl(200, 100%, 90%);
+    font-size: 0.75rem;
+}
+
+/* Checkbox checked state */
+.list li:has(input:checked) label::before {
+    content: "✔︎";
+    background: hsl(200, 100%, 40%);
+    color: hsl(200, 100%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remove button for list items */
+.list li button {
+    background: hsl(0, 100%, 40%, 0.2);
+    border: 1px solid hsl(0, 100%, 50%);
+    color: hsl(0, 100%, 90%);
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.list li button:hover {
+    background: hsl(0, 100%, 40%, 0.4);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the body to center everything and set a background color */
+body, .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, sans-serif;
+    color: #e0e0f1;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Navigation Button Style */
+.nav-btn {
+    background: none;
+    border: 1px solid hsl(200, 100%, 75%);
+    color: hsl(200, 100%, 90%);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: hsl(200, 100%, 30%);
+    color: white;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.intro-section h1 {
+    font-size: 2.5em;
+    color: hsl(200, 100%, 85%);
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    color: #cfcff9;
+    margin-bottom: 2rem;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1em;
+    color: white;
+    background-color: hsl(235, 55%, 49%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: hsl(235, 55%, 40%);
+}
+
+.google-login-btn {
+    user-select: none;
+    transition: background 20ms ease-in;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    height: 36px;
+    border-radius: 6px;
+    color: rgb(225, 225, 225);
+    fill: rgb(225, 225, 225);
+    background: none;
+    font-size: 14px;
+    line-height: 1;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    width: 100%;
+    box-shadow: none;
+    margin-top: 8px;
+}
+
+.google-login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.google-login-btn svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex-shrink: 0;
+    position: absolute;
+    left: 10px;
+}
+
+.google-login-text {
+    text-align: center;
+}
+
+
+.email_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sign {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: #111213;
+}
+
+#use {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #111213;
+}
