@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://taskifyapi-p37g.onrender.com/";
+const API_BASE_URL = "https://taskifyapi-p37g.onrender.com";
 
 export const api = {
 
