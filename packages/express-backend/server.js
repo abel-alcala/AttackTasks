@@ -44,6 +44,8 @@ const startServer = async () => {
   }
 };
 
+
+
 process.on("unhandledRejection", (err) => {
   console.error("Unhandled Promise rejection:", err);
   process.exit(1);
