@@ -94,7 +94,7 @@ const Login = () => {
               <div className="errorMessage">
                 <h3>Request Error</h3>
                 <p>We're sorry, an unexpected error occurred. Please try again</p>
-                <a href="https://ticktasks.vercel.app/login" >Got it</a>
+                <a href="https://ticktasks.vercel.app" >Got it</a>
               </div>
             </>
         )}
